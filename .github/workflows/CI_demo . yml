@@ -11,5 +11,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: print message
-        run: echo "Hello Deveops"
+        run: echo "Hello Devops"
     
