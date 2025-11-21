@@ -1,0 +1,11 @@
+---
+name: Scheduled Workflow
+on:
+  schedule:
+    - Cron: "*/5 * * * *"
+jobs:
+  run-every-5-min:
+    runs-on: Ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "This workflow runs every 5 minutes"
