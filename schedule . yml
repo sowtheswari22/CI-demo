@@ -1,6 +1,9 @@
-----
+---
 name: Scheduled Workflow
 on:
+  push:
+    branches:
+      - main
   schedule:
     - Cron: "*/5 * * * *"
 jobs:
@@ -9,3 +12,4 @@ jobs:
     steps:
       - name: Print message
         run: echo "This workflow runs every 5 minutes"
+
