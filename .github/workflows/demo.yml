@@ -1,13 +1,10 @@
-name: CI Demo
+name: example
 
-on:
-  push:
+on: push
 
 jobs:
-  test:
-    runs-on:  ubuntu-lastest
+  job_1:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout coed
-        uses: actions/Checkout@v3
-      - name: print message
-        run:  echo "Hello Deveops"
+      - name: My first step
+        run: echo This is the first step of my first job.
