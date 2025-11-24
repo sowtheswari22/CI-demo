@@ -7,7 +7,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "*/5 * * * *"  # runs every 5 mintues
+    - cron: #"*/5 * * * *"  # runs every 5 mintues
 
 jobs:
   print-date-time:
